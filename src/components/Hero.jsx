@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../assets/Hand-holding-bulb-3D.png";
-import waves from "../assets/waves.png";
 import { useNavigate } from "react-router-dom";
+import waves from "../assets/waves.png";
+
 import Tab from "./Tab";
 import Utilities from "./Utilities";
 
@@ -10,9 +11,9 @@ const Hero = () => {
 
   return (
     <div className="relative">
-      <div className="relative flex justify-center bg-[#003145] h-[416px] w-full">
-        <div className=" flex-col py-20 w-[792px]">
-          <h1 className="  w-[518px] h-[63px] font-semibold text-4xl text-white">
+      <div className="flex justify-center bg-[#003145] h-[416px] w-full">
+        <div className="flex-col py-20 w-[792px]">
+          <h1 className="w-[518px] h-[63px] font-semibold text-4xl text-white">
             Hackathon Submissions
           </h1>
           <p className="w-[700px] h-[78px] font-medium text-white">
@@ -22,7 +23,7 @@ const Hero = () => {
             nec vitae.
           </p>
           <button
-            className="mt-6 p-[12px] gap-[8px] w-[194px] h-[52px] left-0 top-[188px] rounded-[10px] font-semibold bg-[#44924C] text-white "
+            className=" relative z-10 top-0 mt-6 p-[12px] gap-[8px] w-[194px] h-[52px] rounded-[10px] font-semibold bg-[#44924C] text-white "
             onClick={() => {
               navigate("/uploadsubmission/latest");
             }}

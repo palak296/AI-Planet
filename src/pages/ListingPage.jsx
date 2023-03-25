@@ -74,9 +74,11 @@ const ListingPage = () => {
             onChange={(e) => {
               setSortOrder(e.target.value);
             }}
-            className=" outline-none w-36 h-10 rounded-[100px] px-8  border border-[#666666] text-[#666666]"
+            className="outline-none w-36 h-10 rounded-[100px] px-8  border border-[#666666] text-[#666666]  "
           >
-            <option value="newest">Newest</option>
+            <option value="newest">
+              Newest
+            </option>
             <option value="oldest">Oldest</option>
           </select>
         </div>
