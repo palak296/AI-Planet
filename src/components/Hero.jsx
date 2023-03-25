@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/Hand-holding-bulb-3D.png";
+import waves from "../assets/waves.png";
 import { useNavigate } from "react-router-dom";
 import Tab from "./Tab";
 import Utilities from "./Utilities";
@@ -9,9 +10,9 @@ const Hero = () => {
 
   return (
     <div className="relative">
-      <div className="flex justify-center bg-[#003145] h-[416px] w-full">
-        <div className="flex-col py-20 w-[792px]">
-          <h1 className="w-[518px] h-[63px] font-semibold text-4xl text-white">
+      <div className="relative flex justify-center bg-[#003145] h-[416px] w-full">
+        <div className=" flex-col py-20 w-[792px]">
+          <h1 className="  w-[518px] h-[63px] font-semibold text-4xl text-white">
             Hackathon Submissions
           </h1>
           <p className="w-[700px] h-[78px] font-medium text-white">
@@ -30,10 +31,14 @@ const Hero = () => {
           </button>
         </div>
         <div className="">
-          <img className="mt-14 w-[199px] h-[300px] mx-20" src={Logo} alt="" />
+          <img
+            className=" relative z-10 mt-14 w-[199px] h-[300px] mx-20 "
+            src={Logo}
+            alt=""
+          />
+          <img className=" absolute z-0 bottom-0 right-3" src={waves} alt="" />
         </div>
       </div>
-      
     </div>
   );
 };
