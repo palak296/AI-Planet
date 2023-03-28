@@ -181,7 +181,10 @@ const UploadSubmissionForm = () => {
                 }
                 placeholderText="Select start date"
                 onChange={(date) =>
-                  setNewelement({ ...newelement, hackthonStartDate: date })
+                  setNewelement({
+                    ...newelement,
+                    hackthonStartDate: date.toLocaleDateString(),
+                  })
                 }
                 className="h-[51px] border-[1px] border-[#cccccc] rounded-[8px] p-[16px] gap-[8px] shadow-sm"
               />
@@ -199,7 +202,10 @@ const UploadSubmissionForm = () => {
                 }
                 placeholderText="Select end date"
                 onChange={(date) =>
-                  setNewelement({ ...newelement, hackthonEndDate: date })
+                  setNewelement({
+                    ...newelement,
+                    hackthonEndDate: date.toLocaleDateString(),
+                  })
                 }
                 className="h-[51px] border-[1px] border-[#cccccc] rounded-[8px] p-[16px] gap-[8px] shadow-sm"
               />
