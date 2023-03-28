@@ -27,7 +27,7 @@ const UploadSubmissionForm = () => {
           githubRepoLink: "",
           otherLinks: "",
           descriptionCount: "",
-          uploadTime: time,
+          uploadTime: parseInt(new Date().getTime().toString()),
           favouriteState: false,
         }
       : element
